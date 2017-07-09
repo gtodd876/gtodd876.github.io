@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="A journal of my progress towards becoming a skilled Javascript programmer.">
+    <title>What the Regex?!? | My Developer Journey</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Vol. 3 of My Musician to Developer TransformationThe past couple of weeks I have traversed what is called, &amp;#x201C;Intermediate Algorithm Scripting&amp;#x201D; on Free Code Camp. One of the best feel-good">
+<meta name="keywords" content="javascript, regex, regular expressions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What the Regex?!?">
+<meta property="og:url" content="http://gtodd876.github.io/2017/07/09/70917/index.html">
+<meta property="og:site_name" content="My Developer Journey">
+<meta property="og:description" content="Vol. 3 of My Musician to Developer TransformationThe past couple of weeks I have traversed what is called, &amp;#x201C;Intermediate Algorithm Scripting&amp;#x201D; on Free Code Camp. One of the best feel-good">
+<meta property="og:image" content="http://gtodd876.github.io/images/Fright.jpg">
+<meta property="og:image" content="http://gtodd876.github.io/images/regexr.png">
+<meta property="og:image" content="http://gtodd876.github.io/images/solo.png">
+<meta property="og:updated_time" content="2017-07-09T23:08:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What the Regex?!?">
+<meta name="twitter:description" content="Vol. 3 of My Musician to Developer TransformationThe past couple of weeks I have traversed what is called, &amp;#x201C;Intermediate Algorithm Scripting&amp;#x201D; on Free Code Camp. One of the best feel-good">
+<meta name="twitter:image" content="http://gtodd876.github.io/images/Fright.jpg">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:undefined",
+  "image": "undefined",
+  "name": "Todd Matthews",
+  "url": "http://gtodd876.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+        <link rel="stylesheet" href="/css/custom.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>My Developer Journey</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">Todd Matthews</a>
+                    
+                        <div class="meta">
+                            Musician turned Developer
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Richmond VA</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/gtodd876"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/gtodd87"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        homepage
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-70917" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    What the Regex?!?
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h2 id="Vol-3-of-My-Musician-to-Developer-Transformation"><a href="#Vol-3-of-My-Musician-to-Developer-Transformation" class="headerlink" title="Vol. 3 of My Musician to Developer Transformation"></a>Vol. 3 of My Musician to Developer Transformation</h2><p>The past couple of weeks I have traversed what is called, &#x201C;Intermediate Algorithm Scripting&#x201D; on <a href="https://www.freecodecamp.com/gtodd876" target="_blank" rel="external">Free Code Camp</a>.</p>
+<p>One of the best feel-good moments during these challenges was the exercise called, <a href="https://www.freecodecamp.com/challenges/spinal-tap-case" target="_blank" rel="external">Spinal Tap Case</a>. In addition to having a quote from the mockumentary masterpiece, Spinal Tap, this challenge gave some helpful links to Regex and String.prototype.replace(). The instructions state:</p>
+<blockquote>
+<p>Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.</p>
+</blockquote>
+<p>So if you enter the string, &#x201C;This Is Spinal Tap&#x201D; then your algorithm should spit out, &#x201C;this-is-spinal-tap&#x201D; &#x2026; or &#x201C;AllThe-smallThings&#x201D; should return &#x201C;all-the-small-things.&#x201D;</p>
+<p>At first, as I made adjustments to my 12 lines of code, I could only solve some of the test cases but not all. It was easy to replace the spaces with dashes, and convert all the characters to lower case but that only covers one test case. When I mentioned this challenge to my mentor he said that dedicating a day to learning regex would provide great a payoff with compound interest! Wow, I&#x2019;m all about getting back more than you put in as that&#x2019;s usually never the case in the music industry :) He offered up some great links on regex for my adventure and I was pumped to know I was working on something that was really useful in the coding world.</p>
+<p>The first link I checked out was Hugo Giraudel&#x2019;s blog post, <a href="https://hugogiraudel.com/2015/08/19/learning-regular-expressions-the-practical-way/" target="_blank" rel="external">Learning Regular Expressions: The Practical Way</a>. He does an amazing job of explaining that a regular expression is just a sequence of characters that define a search pattern, no matter how gnarly it may seem. You start out with an expression as simple as :<br><code>\[\w+]</code> and work your way till you get to: <code>\[[a-z][a-z0-9-]*([|*$^~]?=(&quot;[^&quot;\n]*&quot;|&apos;[^&apos;\n]*&apos;|[^&quot;&apos;\s\]]+)(\s+i)?)?]</code> !!</p>
+<img src="/images/Fright.jpg" class="image">
+<p>Initially you don&#x2019;t understand all the character syntax so it seems insanely intimidating. There&#x2019;s nothing &#x2018;regular&#x2019; about regular expressions. The trick to taming this beast though is breaking it down into small steps, section by section, without feeling like you need to rush through them. It doesn&#x2019;t take more than a few hours to build up some solid confidence and then start playing around with regex yourself.</p>
+<p>After finishing Hugo&#x2019;s great tutorial I pointed my browser towards <a href="http://regexr.com/" target="_blank" rel="external">Regexr</a>. It&#x2019;s an awesome tool that lets you copy/paste some data into their window and try out any regex combinations you can dream of to make the best character matches you can.</p>
+<img src="/images/regexr.png" class="image">
+<p>I copy/pasted all the test cases that I needed to pass into regexr&#x2019;s text window to create an amazingly tight feedback loop for my challenge. I messed around for awhile in this diverse character playground and eventually I was able to match everything I needed in one regex statement!</p>
+<p><code>/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;</code></p>
+<p>Let&#x2019;s get down with the break down:</p>
+<ol class="ui list">
+<li><p>the forward slash - <code>/</code> as the first character as well as the forward slash - <code>/</code> before &#x2018;g&#x2019; - <code>/g</code> designates that everything between those forward slashes is regex - <code>/.../</code>. The <code>g</code> is an optional flag that states you want to match &#x2018;all cases globally&#x2019; instead of only matching the &#x2018;first instance&#x2019;.</p>
+</li>
+<li><p><code>\_</code> - matches an underscore character,<br><code>|</code>- or <code>\s</code>-a space character <code>|</code>- or even a lower case character-<code>[a-z]</code> directly followed by an uppercase character or number-<code>[A-Z0-9]</code>.</p>
+</li>
+<li><p>The parentheses denote nested capture groups and are the secret sauce to this expression. First we wrap them around <code>[a-z]</code>, which says it is nested capture group #1 and then <code>[A-z0-9]</code> which means it is capture group #2. This allows you to later use <code>$1</code> and <code>$2</code> to reference capture group 1 &amp; 2 respectively.</p>
+</li>
+<li><p>Replace - after the global flag and the comma, you then state which character you would like to replace your matches with, and I used &#x2018;$1-$2&#x2019;. That means that in between capture group 1 and 2 there a hyphen will be placed.</p>
+</li>
+</ol>
+<p>I brought this custom regular expression back to my challenge and my code looked like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function spinalCase(str) {</div><div class="line">  var separateCamelCase = str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;);</div><div class="line">  return separateCamelCase.toLowerCase();</div><div class="line">}</div><div class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</div></pre></td></tr></table></figure>
+<p>My mentor had mentioned that this was solvable in two lines, so I was excited when I sent him my code - proud of the day I spent learning regex.</p>
+<p>After looking over my code, my mentor informed me that my code could easily be a one line solution because there was no need for the temporary variable. I took that out, returned the replace() and what do you know&#x2026;. BAM!!! ONE LINE SOLUTION!</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function spinalCase(str) {</div><div class="line">  return str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;).toLowerCase();</div><div class="line">}</div><div class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</div></pre></td></tr></table></figure>
+<p>&#x2026;and was rewarded with the glorious green Free Code Camp success window.</p>
+<img src="/images/solo.png" class="image">
+<p>Whoaaaa, How does Free Code Camp know I&#x2019;m a recovering musician turned coder?!? :)</p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-07-09T19:57:52.000Z" itemprop="datePublished">2017-07-09</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/javascript-regex-regular-expressions/">javascript, regex, regular expressions</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>Previous</a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/06/25/post062517/" class="ui tiny button">
+                    
+                    A is for Algorithms, APIs &amp; Ajax
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#Vol-3-of-My-Musician-to-Developer-Transformation"><span>Vol. 3 of My Musician to Developer Transformation</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">Todd Matthews</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
