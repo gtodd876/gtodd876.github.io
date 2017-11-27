@@ -9,7 +9,7 @@
     <title>A is for Algorithms, APIs &amp; Ajax | My Developer Journey</title>
 
     <!-- Open Graph -->
-    <meta name="description" content="Vol. 2 of My Musician to Developer TransformationIt&amp;#x2019;s no exaggeration when I say the speed of my progress on Free Code Camp went from &amp;#x2018;light speed&amp;#x2019; to &amp;#x2018;grandma learning to">
+    <meta name="description" content="Vol. 2 of My Musician to Developer TransformationIt&amp;#x2019;s no exaggeration when I say the speed of my progress on Free Code Camp went from &amp;#x2018;lig">
 <meta name="keywords" content="freecodecamp, jquery, ajax, api, javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A is for Algorithms, APIs &amp; Ajax">
@@ -30,8 +30,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Person",
-  "email": "mailto:undefined",
-  "image": "undefined",
+  "email": "mailto:",
+  "image": "",
   "name": "Todd Matthews",
   "url": "http://gtodd876.github.io"
 }
@@ -167,47 +167,47 @@
                         
                         <h2 id="Vol-2-of-My-Musician-to-Developer-Transformation"><a href="#Vol-2-of-My-Musician-to-Developer-Transformation" class="headerlink" title="Vol. 2 of My Musician to Developer Transformation"></a>Vol. 2 of My Musician to Developer Transformation</h2><p>It&#x2019;s no exaggeration when I say the speed of my progress on Free Code Camp went from &#x2018;light speed&#x2019; to &#x2018;grandma learning to use Snapchat.&#x2019; This is obviously by design as FCC shares this hilarious picture before you start your algorithms challenges.</p>
 <img src="/images/kicked-out.jpg" class="image">
-<p>If you look at <a href="https://www.freecodecamp.com/gtodd876" target="_blank" rel="external">my FCC map</a> you can see that I finished 117 exercises on Thursday, June 15th, 105 exercises on Friday, 18 items that Sunday, and then down to six by Monday the 19th. I was putting in the same amount of energy and time but the difficulty rose drastically by the time I reached the algorithmic section. Instead of being taught basic concepts we are asked to solve a problem. After making those required initial mental adjustments, I really started to enjoy these exercises! Initially it took a fair amount of thought to make progress towards the solution, but the resulting endorphin rush was much more intense when I was rewarded with that big ol&#x2019; green box of happiness.</p>
+<p>If you look at <a href="https://www.freecodecamp.com/gtodd876" target="_blank" rel="noopener">my FCC map</a> you can see that I finished 117 exercises on Thursday, June 15th, 105 exercises on Friday, 18 items that Sunday, and then down to six by Monday the 19th. I was putting in the same amount of energy and time but the difficulty rose drastically by the time I reached the algorithmic section. Instead of being taught basic concepts we are asked to solve a problem. After making those required initial mental adjustments, I really started to enjoy these exercises! Initially it took a fair amount of thought to make progress towards the solution, but the resulting endorphin rush was much more intense when I was rewarded with that big ol&#x2019; green box of happiness.</p>
  <img src="/images/happy.png" class="image">
 <p> At this point, I had finally caught up in my progress with a long time friend and fellow audio engineer who is also a new Free Code Camper. After we had both completed an algorithm we would compare our work. It was really educational for us to have to understand each others code and to see how differently the problem could be solved! If you are learning to code and don&#x2019;t have somebody to chat with then I highly suggest searching out a local programming meetup group so you can discuss coding with others.</p>
 <p>Take for example the <strong>&#x2018;Chunky Monkey&#x2019;</strong> exercise - where you need to write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.</p>
 <p> <strong>Spoiler Alert!!</strong> (Don&#x2019;t read any further if you&#x2019;re a current free code camper who hasn&#x2019;t finished the Basic algorithm section yet!)</p>
 <p>Here&#x2019;s my solution:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">function chunkArrayInGroups(arr, size) {</div><div class="line">  var twoDArray = [];</div><div class="line">  var j = 0;</div><div class="line"></div><div class="line">  for (var i = 0; i &lt; arr.length; i + size) {</div><div class="line">    twoDArray[j] = arr.splice(i, size);</div><div class="line">    j++;</div><div class="line">  }</div><div class="line">  return twoDArray;</div><div class="line">  }</div><div class="line"></div><div class="line">chunkArrayInGroups([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;], 2);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function chunkArrayInGroups(arr, size) {</span><br><span class="line">  var twoDArray = [];</span><br><span class="line">  var j = 0;</span><br><span class="line"></span><br><span class="line">  for (var i = 0; i &lt; arr.length; i + size) {</span><br><span class="line">    twoDArray[j] = arr.splice(i, size);</span><br><span class="line">    j++;</span><br><span class="line">  }</span><br><span class="line">  return twoDArray;</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">chunkArrayInGroups([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;], 2);</span><br></pre></td></tr></table></figure>
 <p>And Greg&#x2019;s solution:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function chunkArrayInGroups(arr, size) {</div><div class="line">  var newArr = [];</div><div class="line">  var mid1Arr = [];</div><div class="line"></div><div class="line">  for (var i = 0; i &lt; arr.length; i +=size){</div><div class="line">    mid1Arr = arr.slice(i, i+size);</div><div class="line">    newArr.push(mid1Arr);</div><div class="line">  }</div><div class="line"></div><div class="line">  return newArr;</div><div class="line">}</div><div class="line"></div><div class="line">chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function chunkArrayInGroups(arr, size) {</span><br><span class="line">  var newArr = [];</span><br><span class="line">  var mid1Arr = [];</span><br><span class="line"></span><br><span class="line">  for (var i = 0; i &lt; arr.length; i +=size){</span><br><span class="line">    mid1Arr = arr.slice(i, i+size);</span><br><span class="line">    newArr.push(mid1Arr);</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  return newArr;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);</span><br></pre></td></tr></table></figure>
 <p>You can see that we both accomplished the same task with Greg using the <code>slice</code> method while I used <code>splice</code>. Greg started with two arrays and I started with an array and an integer. This would spark discussion between us over which method we thought was more efficient or cleaner looking and it&#x2019;s great way to solidify what you just learned.</p>
 <p>&#x2026;As I&#x2019;m typing this now a new bonus has emerged to making these blog posts. As I revisit these algorithms, it&#x2019;s very reassuring to see something that was so difficult just at the beginning of this week, seems so easy to understand now.</p>
 <p><strong>Look Ma, No Hands!</strong></p>
 <p><a class="magnific-img" href="/images/noHands.jpg"><img src="/images/noHands.jpg" alt="Look Ma, No Hands!" class="ui centered image"></a></p>
 <p>Once I made it to this weekend I had finished up the algorithms and quickly traveled through the JSON, APIs, and Ajax section. These exercises didn&#x2019;t do much to explain the concepts and to complete them you basically copied the code they supplied into the code block to finish the assignment. I assume its purpose is to get you familiar with the look of jQuery in regards to dealing with Ajax and JSON files, and then you&#x2019;re expected to deepen your knowledge with &#x2018;The Google&#x2019;. After watching a few videos about JSON and jQuery/ajax I was ready to start the next projects! It was great timing as I was done with the day job for the week and had lots of time to devote to coding.</p>
-<p>I&#x2019;ve knocked out three of the four Intermediate Front End Development projects so far this weekend. Most of them have been battles against and/or workarounds to get the required APIs to work. The main issue is that you&#x2019;re told to use <a href="https://codepen.io/gtodd876/" target="_blank" rel="external">Code Pen</a> to submit your work. As you start learning about APIs along with their associated api keys, and attempt to <code>GET</code> some JSON data, your console slaps you with a:</p>
+<p>I&#x2019;ve knocked out three of the four Intermediate Front End Development projects so far this weekend. Most of them have been battles against and/or workarounds to get the required APIs to work. The main issue is that you&#x2019;re told to use <a href="https://codepen.io/gtodd876/" target="_blank" rel="noopener">Code Pen</a> to submit your work. As you start learning about APIs along with their associated api keys, and attempt to <code>GET</code> some JSON data, your console slaps you with a:</p>
 <blockquote>
-<p>XMLHttpRequest cannot load  No &#x2018;Access-Control-Allow-Origin&#x2019; header is present on the requested resource. Origin <a href="https://s.codepen.io" target="_blank" rel="external">https://s.codepen.io</a> is therefore not allowed access.</p>
+<p>XMLHttpRequest cannot load  No &#x2018;Access-Control-Allow-Origin&#x2019; header is present on the requested resource. Origin <a href="https://s.codepen.io" target="_blank" rel="noopener">https://s.codepen.io</a> is therefore not allowed access.</p>
 </blockquote>
 <p>Some would only see this as an opportunity to finally toss your laptop out of a 10th floor window, but it really was a good way to learn more about why this is happening. (Who wants to get one of those macs with soldered ram anyway, ewww) My understanding of it so far is that you&#x2019;re trying to get access to the API from a website that you do not own.</p>
 <p>From Wikipedia&#x2019;s entry on <strong>Same-origin Policy</strong></p>
 <blockquote>
 <p>In computing, the same-origin policy is an important concept in the web application security model. Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. An origin is defined as a combination of URI scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page&#x2019;s Document Object Model.</p>
 </blockquote>
-<p>This is a downside to using a service like Code Pen even though it is a nice development playground to quickly sketch up ideas. I learned to work around this issue by adding <a href="https://crossorigin.me/" target="_blank" rel="external">https://crossorigin.me/</a> to the beginning of your url. The other security issue is that many of these API&#x2019;s require a private key and it&#x2019;s a bad idea to store these private keys in your public code at Codepen.</p>
+<p>This is a downside to using a service like Code Pen even though it is a nice development playground to quickly sketch up ideas. I learned to work around this issue by adding <a href="https://crossorigin.me/" target="_blank" rel="noopener">https://crossorigin.me/</a> to the beginning of your url. The other security issue is that many of these API&#x2019;s require a private key and it&#x2019;s a bad idea to store these private keys in your public code at Codepen.</p>
 <p>Today I came across a couple forum posts that will solve these issues with my future FCC projects!</p>
 <ul class="ui list">
-<li><p>First, it was great to learn that we&#x2019;re allowed to <a href="https://forum.freecodecamp.com/t/freecodecamp-challenge-guide-how-to-use-the-twitchtv-api/19541" target="_blank" rel="external">download and use local JSON data</a> for the next project that deals with <a href="https://dev.twitch.tv/" target="_blank" rel="external">Twitch TV&#x2019;s</a> API.</p>
+<li><p>First, it was great to learn that we&#x2019;re allowed to <a href="https://forum.freecodecamp.com/t/freecodecamp-challenge-guide-how-to-use-the-twitchtv-api/19541" target="_blank" rel="noopener">download and use local JSON data</a> for the next project that deals with <a href="https://dev.twitch.tv/" target="_blank" rel="noopener">Twitch TV&#x2019;s</a> API.</p>
 </li>
-<li><p>Second, I found out that we can use <a href="https://pages.github.com/" target="_blank" rel="external">Github pages</a> to submit our projects! Yay, we aren&#x2019;t restricted to using Code Pen. I&#x2019;m really excited to get back to tightening up my skills - building my projects locally with the Atom text editor (Mmmm auto-completion), Git, as well as continuing to level up my terminal skills. Once I have my project rocking, I just need to upload a branch named <code>gh-pages</code> and it can be viewed at <a href="http://_username_.github.io/_repository_" target="_blank" rel="external">http://_username_.github.io/_repository_</a> !</p>
+<li><p>Second, I found out that we can use <a href="https://pages.github.com/" target="_blank" rel="noopener">Github pages</a> to submit our projects! Yay, we aren&#x2019;t restricted to using Code Pen. I&#x2019;m really excited to get back to tightening up my skills - building my projects locally with the Atom text editor (Mmmm auto-completion), Git, as well as continuing to level up my terminal skills. Once I have my project rocking, I just need to upload a branch named <code>gh-pages</code> and it can be viewed at <a href="http://_username_.github.io/_repository_" target="_blank" rel="noopener">http://_username_.github.io/_repository_</a> !</p>
 </li>
 </ul>
 <p>Here are links to the three projects I finished this weekend:</p>
 <ul class="ui list">
-<li><a href="https://codepen.io/gtodd876/pen/WOOqqa" target="_blank" rel="external">Random Quote Generator</a><ul>
+<li><a href="https://codepen.io/gtodd876/pen/WOOqqa" target="_blank" rel="noopener">Random Quote Generator</a><ul>
 <li>Press a button to see a new quote</li>
 <li>Press a button to tweet out a new quote</li>
 </ul>
 </li>
 </ul>
 <ul class="ui list">
-<li><a href="https://codepen.io/gtodd876/pen/rwzbZx/" target="_blank" rel="external">Show the local weather</a><ul>
+<li><a href="https://codepen.io/gtodd876/pen/rwzbZx/" target="_blank" rel="noopener">Show the local weather</a><ul>
 <li>See the weather in your current location</li>
 <li>Convert the temperature between Celsius/Fahrenheit</li>
 <li>Different background image depending on temperature</li>
@@ -215,7 +215,7 @@
 </li>
 </ul>
 <ul class="ui list">
-<li><a href="https://codepen.io/gtodd876/pen/jwGEpo" target="_blank" rel="external">Build A Wikipedia Viewer</a><ul>
+<li><a href="https://codepen.io/gtodd876/pen/jwGEpo" target="_blank" rel="noopener">Build A Wikipedia Viewer</a><ul>
 <li>Search Wikipedia entries in a search box and see the resulting Wikipedia entries</li>
 <li>Click a button to see a random Wikipedia article</li>
 </ul>

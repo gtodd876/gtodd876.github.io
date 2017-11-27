@@ -9,7 +9,7 @@
     <title>What the Regex?!? | My Developer Journey</title>
 
     <!-- Open Graph -->
-    <meta name="description" content="Vol. 3 of My Musician to Developer TransformationThe past couple of weeks I have traversed what is called, &amp;#x201C;Intermediate Algorithm Scripting&amp;#x201D; on Free Code Camp. One of the best feel-good">
+    <meta name="description" content="Vol. 3 of My Musician to Developer TransformationThe past couple of weeks I have traversed what is called, &amp;#x201C;Intermediate Algorithm Scripting&amp;#x20">
 <meta name="keywords" content="javascript, regex, regular expressions">
 <meta property="og:type" content="article">
 <meta property="og:title" content="What the Regex?!?">
@@ -30,8 +30,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Person",
-  "email": "mailto:undefined",
-  "image": "undefined",
+  "email": "mailto:",
+  "image": "",
   "name": "Todd Matthews",
   "url": "http://gtodd876.github.io"
 }
@@ -165,19 +165,19 @@
 
                     <div class="article-entry" itemprop="articleBody">
                         
-                        <h2 id="Vol-3-of-My-Musician-to-Developer-Transformation"><a href="#Vol-3-of-My-Musician-to-Developer-Transformation" class="headerlink" title="Vol. 3 of My Musician to Developer Transformation"></a>Vol. 3 of My Musician to Developer Transformation</h2><p>The past couple of weeks I have traversed what is called, &#x201C;Intermediate Algorithm Scripting&#x201D; on <a href="https://www.freecodecamp.com/gtodd876" target="_blank" rel="external">Free Code Camp</a>.</p>
-<p>One of the best feel-good moments during these challenges was the exercise called, <a href="https://www.freecodecamp.com/challenges/spinal-tap-case" target="_blank" rel="external">Spinal Tap Case</a>. In addition to having a quote from the mockumentary masterpiece, Spinal Tap, this challenge gave some helpful links to Regex and String.prototype.replace(). The instructions state:</p>
+                        <h2 id="Vol-3-of-My-Musician-to-Developer-Transformation"><a href="#Vol-3-of-My-Musician-to-Developer-Transformation" class="headerlink" title="Vol. 3 of My Musician to Developer Transformation"></a>Vol. 3 of My Musician to Developer Transformation</h2><p>The past couple of weeks I have traversed what is called, &#x201C;Intermediate Algorithm Scripting&#x201D; on <a href="https://www.freecodecamp.com/gtodd876" target="_blank" rel="noopener">Free Code Camp</a>.</p>
+<p>One of the best feel-good moments during these challenges was the exercise called, <a href="https://www.freecodecamp.com/challenges/spinal-tap-case" target="_blank" rel="noopener">Spinal Tap Case</a>. In addition to having a quote from the mockumentary masterpiece, Spinal Tap, this challenge gave some helpful links to Regex and String.prototype.replace(). The instructions state:</p>
 <blockquote>
 <p>Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.</p>
 </blockquote>
 <p>So if you enter the string, &#x201C;This Is Spinal Tap&#x201D; then your algorithm should spit out, &#x201C;this-is-spinal-tap&#x201D; &#x2026; or &#x201C;AllThe-smallThings&#x201D; should return &#x201C;all-the-small-things.&#x201D;</p>
 <p>At first, as I made adjustments to my 12 lines of code, I could only solve some of the test cases but not all. It was easy to replace the spaces with dashes, and convert all the characters to lower case but that only covers one test case. When I mentioned this challenge to my mentor he said that dedicating a day to learning regex would provide great a payoff with compound interest! Wow, I&#x2019;m all about getting back more than you put in as that&#x2019;s usually never the case in the music industry :) He offered up some great links on regex for my adventure and I was pumped to know I was working on something that was really useful in the coding world.</p>
-<p>The first link I checked out was Hugo Giraudel&#x2019;s blog post, <a href="https://hugogiraudel.com/2015/08/19/learning-regular-expressions-the-practical-way/" target="_blank" rel="external">Learning Regular Expressions: The Practical Way</a>. He does an amazing job of explaining that a regular expression is just a sequence of characters that define a search pattern, no matter how gnarly it may seem. You start out with an expression as simple as :<br><code>\[\w+]</code> and work your way till you get to:</p>
+<p>The first link I checked out was Hugo Giraudel&#x2019;s blog post, <a href="https://hugogiraudel.com/2015/08/19/learning-regular-expressions-the-practical-way/" target="_blank" rel="noopener">Learning Regular Expressions: The Practical Way</a>. He does an amazing job of explaining that a regular expression is just a sequence of characters that define a search pattern, no matter how gnarly it may seem. You start out with an expression as simple as :<br><code>\[\w+]</code> and work your way till you get to:</p>
 <blockquote>
 <p><code>\[[a-z][a-z0-9-]*([|*$^~]?=(&quot;[^&quot;\n]*&quot;|&apos;[^&apos;\n]*&apos;|[^&quot;&apos;\s\]]+)(\s+i)?)?]</code> !!<br> <a class="magnific-img" href="/images/Fright.jpg"><img src="/images/Fright.jpg" class="image ui centered"></a></p>
 </blockquote>
 <p>Initially you don&#x2019;t understand all the character syntax so it seems insanely intimidating. There&#x2019;s nothing &#x2018;regular&#x2019; about regular expressions. The trick to taming this beast though is breaking it down into small steps, section by section, without feeling like you need to rush through them. It doesn&#x2019;t take more than a few hours to build up some solid confidence and then start playing around with regex yourself.</p>
-<p>After finishing Hugo&#x2019;s great tutorial I pointed my browser towards <a href="http://regexr.com/" target="_blank" rel="external">Regexr</a>. It&#x2019;s an awesome tool that lets you copy/paste some data into their window and try out any regex combinations you can dream of to make the best character matches you can.</p>
+<p>After finishing Hugo&#x2019;s great tutorial I pointed my browser towards <a href="http://regexr.com/" target="_blank" rel="noopener">Regexr</a>. It&#x2019;s an awesome tool that lets you copy/paste some data into their window and try out any regex combinations you can dream of to make the best character matches you can.</p>
 <p><em>Warning! Spoiler alert. If you&#x2019;re a Free Code Camper and haven&#x2019;t completed the &#x201C;Spinal Tap&#x201D; challenge then stop reading now. Come back after you&#x2019;ve solved it, if you&#x2019;d like to compare your code.</em><br><a class="magnific-img" href="/images/regexr.png"><img src="/images/regexr.png" class="image ui centered"></a></p>
 <p>I copy/pasted all the test cases that I needed to pass into regexr&#x2019;s text window to create an amazingly tight feedback loop for my challenge. I messed around for awhile in this diverse character playground and eventually I was able to match everything I needed in one regex statement!</p>
 <p><code>/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;</code></p>
@@ -193,10 +193,10 @@
 </li>
 </ol>
 <p>I brought this custom regular expression back to my challenge and my code looked like:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function spinalCase(str) {</div><div class="line">  var separateCamelCase = str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;);</div><div class="line">  return separateCamelCase.toLowerCase();</div><div class="line">}</div><div class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function spinalCase(str) {</span><br><span class="line">  var separateCamelCase = str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;);</span><br><span class="line">  return separateCamelCase.toLowerCase();</span><br><span class="line">}</span><br><span class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</span><br></pre></td></tr></table></figure>
 <p>My mentor had mentioned that this was solvable in two lines, so I was excited when I sent him my code - proud of the day I spent learning regex&#x2026;</p>
 <p>&#x2026;but after getting to see my code, my mentor informed me that my solution could easily be a one liner because there was no need for the temporary variable. I took that out, returned the replace() and what do you know&#x2026;. BAM!!! ONE LINE SOLUTION!</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function spinalCase(str) {</div><div class="line">  return str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;).toLowerCase();</div><div class="line">}</div><div class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function spinalCase(str) {</span><br><span class="line">  return str.replace(/\_|\s|([a-z])([A-Z0-9])/g, &apos;$1-$2&apos;).toLowerCase();</span><br><span class="line">}</span><br><span class="line">spinalCase(&apos;This Is Spinal Tap&apos;);</span><br></pre></td></tr></table></figure>
 <p>&#x2026;and was rewarded with the glorious green Free Code Camp success window.</p>
 <img src="/images/solo.png" class="image">
 <p>Whoaaaa, How does Free Code Camp know I&#x2019;m a recovering musician turned coder?!? :)</p>
