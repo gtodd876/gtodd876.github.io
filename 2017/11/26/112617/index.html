@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://gtodd876.github.io/images/vboxwebsite.png">
 <meta property="og:image" content="http://gtodd876.github.io/images/vmscreen.png">
 <meta property="og:image" content="http://gtodd876.github.io/images/guestadditions.png">
-<meta property="og:updated_time" content="2017-11-27T00:42:18.000Z">
+<meta property="og:updated_time" content="2017-11-27T02:31:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Easy Cross Browser&#x2F;OS&#x2F;Device Development">
 <meta name="twitter:description" content="Vol. 5 of Developer Transformation - Thanksgiving Edition - &amp;#x1F983; &amp;#x1F341; &amp;#x1F468;&amp;#x200D;&amp;#x1F469;&amp;#x200D;&amp;#x1F466; &amp;#x1F4BB; (running Windows 10, Ubuntu, Chrome on MacOS &amp;amp; iTerm on the sa">
@@ -183,7 +183,7 @@
 <li><p>Done! Run the utility from the folder where ngrok resides</p>
 </li>
 </ol>
-<p>In my case I&#x2019;m running terminal on a mac, and if you&#x2019;re lazy like me you just unzipped Ngrok in your downloads folder and haven&#x2019;t moved it yet. Let&#x2019;s say you are running your live development server on port 3000. You would make sure you are within your downloads folder and then run:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./ngrok http 3000</span><br></pre></td></tr></table></figure></p>
+<p>In my case I&#x2019;m running terminal on a mac, and if you&#x2019;re lazy like me you just unzipped Ngrok in your downloads folder and haven&#x2019;t moved it yet. Let&#x2019;s say you are running your live development server on port 3000. (You need to be using something akin to the npm module <a href="https://www.npmjs.com/package/live-server" target="_blank" rel="noopener">live-server</a> or <a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank" rel="noopener">webpack</a> with hot reload)<br>You would make sure you are within your downloads folder and then run:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./ngrok http 3000</span><br></pre></td></tr></table></figure></p>
 <p>Your terminal screen&#x2019;s output should now resemble something of this nature:</p>
 <img src="/images/ngrok.png" class="image">
 <p>With this particular example and instance of ngrok, grab a mobile phone or tablet, open your favorite browser, (firefox is all the rage these days&#x1F61C;) and enter in the address:<br><a href="http://7f45bc53.ngrok.io" target="_blank" rel="noopener">http://7f45bc53.ngrok.io</a> (your forwarding address will be different!)<br>Then you&#x2019;ll see your live server running on your mobile device. My mind was blown the first time I got this setup and I could tweak my css rules with so much more confidence! My wife has an iPad with an older iOS that does not support grid. That was immensly helpful in my situation!</p>
